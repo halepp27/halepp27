@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alep's Website</title>
+  <link rel="shortcut icon" href="gambaa.jpg" type="image/jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #C6386D;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    /* HOME section */
+    .hero {
+      background-image: url('yg ni.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero h1 {
+  font-size: 60px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #FF4E50, #F9D423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+    .hero p {
+      font-size: 24px;
+      color: yellow;
+    }
+
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .section-content.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section-content img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #C6386D;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#life">Gallery</a>
+    <a href="#quotes">Quotes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>WELCOME TO MY PAGE</h1> 
+  </section>
+
+  <!-- About Section (Image Left) -->
+  <section id="about" class="section-content">
+    <img src="89bddaab-032e-4a20-8a9f-217b4b0a8a5f.jpeg" alt="Alep" />
+    <div class="text">
+      <h2>About Alep</h2>
+      <p>Hi, I’m Alif Johari — but people call me Alep (because apparently “Alif” was too basic). I’m 21, the fifth child out of six, which means I’m basically the middle kid with extra trauma and less attention. Currently surviving my final semester in Information Management at UiTM Rembau — where the WiFi is fast but the assignments are faster. I believe in working smart, staying chill, and occasionally pretending to be productive. I’m the kind of guy who shows up late but still manages to bring vibes. Life’s too short to be serious all the time… unless it’s final exam week. Then I cry in PDF.</p>
+    </div>
+  </section>
+
+  <!-- Education Section (styled like Gallery with 2 images) -->
+<section id="education" style="text-align: center;">
+  <h2>Education</h2>
+  <p style="max-width: 800px; margin: 0 auto 30px; font-size: 18px; line-height: 1.8;">
+    First picture shows Alep finishing his industrial training at Universiti Malaya Specialist Centre (UMSC). Next to him was his supervisor, Mr Zafuan. He chose UMSC because it was only 5 minutes from home… but he still clocked in late every day. Meanwhile the second one was him in first sem at Kolej Dato SyahBandar
+  </p>
+  <div class="gallery">
+    <img src="intern.jpeg" alt="Internship" />
+    <img src="study.jpeg" alt="Study Time" />
+  </div>
+</section>
+
+
+
+
+
+  <!-- Life Gallery Section -->
+  <section id="life" style="text-align: center;">
+    <h2>Life Gallery</h2>
+    <div class="gallery">
+      <p>In real life, Alep has another life aside from being a student. These 3 pictures shows a few activities he does to fill his life</p>
+      <img src="cedok.jpeg" alt="Cedok Trip" />
+      <img src="angsi.jpeg" alt="Gunung Angsi Hike" />
+      <img src="sunset.jpeg" alt="Sunset Moment" />
+    </div>
+  </section>
+
+  <!-- Quotes Section -->
+  <section id="quotes" style="text-align: center;">
+    <h2>words of self awareness</h2>
+    <div style="max-width: 800px; margin: auto; font-size: 20px; line-height: 1.8;">
+      <p>💬 <em>"There must be reason why we said yes after all that 77 question"</em> – alifjohari</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="text-align: center;">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:alifjohari04@gmail.com">alifjohari04@gmail.com</a></p>
+    <p>0183867079</p>
+    <p>End of page — <a href="#home">Let's go UP</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made with dedication and kepalatau at FPM Rembau
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
